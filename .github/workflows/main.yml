@@ -36,7 +36,7 @@ jobs:
           cmd: install
 
       - name: Installing surge
-        run: npm iinstall -g surge
+        run: npm install -g surge
 
       - name: Deploy on surge
         run: surge ./build http://big-b.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
